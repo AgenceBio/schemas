@@ -1,0 +1,550 @@
+{
+  "$schema":"https://frictionlessdata.io/schemas/table-schema.json",
+  "title":"Registre Parcellaire Graphique Bio",
+  "description":"Variante du RPG (Registre Parcellaire Graphique), avec des informations environnementales (demande d'aides bio, maraîchage et/ou agroforesterie)",
+  "keywords":[
+      "agriculture",
+      "agriculture biologique",
+      "environnement"
+  ],
+  "countryCode": "FR",
+  "sources": [
+    {
+      "name": "Registre Parcellaire Graphique",
+      "path": "https://www.data.gouv.fr/fr/datasets/58d8d8a0c751df17537c66be"
+    }
+  ],
+  "licenses": [
+      {
+        "title": "Licence Ouverte",
+        "name": "etalab-2.0",
+        "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+      }
+    ],
+  "resources": [
+    {
+      "name": "Code source de l'outil d'anonymisation",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/01620552-fc0e-4af5-a754-04840ca2c129",
+      "format": null,
+      "mediatype": null,
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Auvergne-Rhône-Alpes (84) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/70ef593d-3c62-4e7e-b4ff-e9790b266774",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Auvergne-Rhône-Alpes (84) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/9c827824-093b-4ca4-93e2-301215ffb358",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Auvergne-Rhône-Alpes (84) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/65869784-2d21-4267-b78e-fd3c79278c77",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Auvergne-Rhône-Alpes (84) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/ad8e149b-0abb-48da-898f-d135d9214dec",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bourgogne-Franche-Comté (27) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/c1fafb8e-1eae-4f07-9e09-406832744a70",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bourgogne-Franche-Comté (27) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/df503777-392d-464a-9e42-47ef703a7a84",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bourgogne-Franche-Comté (27) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/730f2d60-9c1d-4337-818f-6b2cb61c8942",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bourgogne-Franche-Comté (27) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/af661399-5eec-45a6-9788-d8ad0ad9a8ad",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bretagne (53) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/7856855e-6d78-4f11-92d1-bf844759581c",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bretagne (53) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/ea81b487-f84a-4443-828a-b06f49e432ae",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bretagne (53) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/84505e9f-38b5-48f4-8511-d57c190a77d6",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Bretagne (53) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/0ab34f61-7c94-46af-857b-f9ee6364683c",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Centre-Val de Loire (24) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/3d6a16fc-4c51-4274-bd4e-aadf597cd663",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Centre-Val de Loire (24) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/50c9ac86-e868-4230-b8b3-e8e4c2efe407",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Centre-Val de Loire (24) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/3fb80ff7-3d81-4c7e-9b9e-cd41128725e1",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Centre-Val de Loire (24) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/22d46907-f0a4-4436-ad45-70dd3e19c524",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Corse (94) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/af035ec8-2b3e-498b-86f0-f7fcb92616e5",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Corse (94) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/73bbe90e-4769-443b-9ebe-2e212012ab0d",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Corse (94) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/417f7c32-6204-4e20-858f-7bab22ec8fcf",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Corse (94) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/b675c787-338b-456c-81fe-ab569a835b19",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Grand Est (44) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/3cc9e552-0e72-48d4-8350-e4002a419b4c",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Grand Est (44) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/c33a2c96-8324-444c-bcef-005bdfbcb0ca",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Grand Est (44) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/2e53c9b1-899c-4f1f-9d12-82c7d30b4119",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Grand Est (44) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/e0a4b9eb-5324-4b74-be96-83c8222d9641",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guadeloupe (01) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/27269dfe-c6d5-4b06-addf-f4124548d607",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guadeloupe (01) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/36867217-691f-459a-98fd-94fb833972a6",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guadeloupe (01) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/08f5a626-18b1-46c1-890b-69880a479e23",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guadeloupe (01) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/c856f2aa-19d7-4921-8da1-c72d67f5c2a5",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guyane (03) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/e12fc130-1d90-40a4-a9ed-42d3d4e16fdd",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guyane (03) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/599f3c94-2c7d-4278-b1d4-2397f4642d27",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guyane (03) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/e90867dd-48a9-4d49-a034-1d0bc402bb8f",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Guyane (03) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/b4e31413-6fc0-4439-82e3-a0447393d822",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Hauts-de-France (32) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/9e7f3da4-2c26-4f59-a286-e88c3c9919c4",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Hauts-de-France (32) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/b91ed255-edd5-418e-b86a-cb2f56c2c290",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Hauts-de-France (32) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/02a5e94f-65b6-42dd-b122-228368fc5f23",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Hauts-de-France (32) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/30fc63a4-bcda-40ff-a500-93536c22ef66",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Île-de-France (11) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/bec35d42-7d07-46ab-bdfb-8566bae513c1",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Île-de-France (11) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/6592f822-376a-49c7-bf3f-423dfefdeec1",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Île-de-France (11) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/73015327-06c1-4cff-91fb-d64f7b24e3f7",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Île-de-France (11) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/48ce41e2-81d1-4cf7-a243-950231f7803d",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région La Réunion (04) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/ae44c7ee-a6be-49bb-8c4e-7a17c163debd",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région La Réunion (04) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/b7d2ac1c-a14e-4a41-ad33-77f55fab845f",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région La Réunion (04) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/627bf36e-e780-4cb7-8357-afc2be6856d1",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région La Réunion (04) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/b667d6ed-21f4-4b50-bebb-bb6089850734",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Martinique (02) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/6eea97a8-f71f-4191-956f-c92e15abfd4f",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Martinique (02) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/16e8c65c-bade-45ab-a20e-86cc789dc73e",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Martinique (02) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/bf6eeafb-c778-4b91-b61b-c8ef84ade25f",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Martinique (02) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/5f7eceb6-14d1-48d0-81cd-23e4c3c08e8c",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Mayotte (06) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/b3aa8baf-3097-4eef-be73-5792205c61f5",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Mayotte (06) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/53546292-485b-4013-9159-626a9e1a6a3e",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Mayotte (06) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/55f26bc7-70f1-44b9-bdf0-f6e8e4788f04",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Mayotte (06) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/4ca6df34-c7e4-437c-8726-fa95f7b22659",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Normandie (28) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/8047b846-2579-42ad-b54c-52ad1a63bb69",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Normandie (28) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/db37a1b0-0ea3-4d5f-958c-a5340e6497b3",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Normandie (28) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/786ae76c-bf50-4755-892a-fa6baa375e8e",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Normandie (28) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/af71f75c-2225-4f67-a714-b78bd0ba0f91",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Nouvelle-Aquitaine (75) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/99047fb8-58dc-4e3e-9413-975677a909da",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Nouvelle-Aquitaine (75) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/8b5d4181-83ab-443f-91d5-dd417118c937",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Nouvelle-Aquitaine (75) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/010d7a95-20f4-42b6-8665-396271d0a3cf",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Nouvelle-Aquitaine (75) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/312d8aa9-8c21-4e57-958b-7509aee1e733",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Occitanie (76) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/5a6f6d0d-5594-4f48-8b0d-c727198fc8dc",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Occitanie (76) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/57aa806b-b1e7-4a11-a004-9fb421bbf9fc",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Occitanie (76) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/e91b887d-5fbc-477e-ba8a-71c33846dfba",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Occitanie (76) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/cb690e94-1fd7-47bf-826d-374e0c653f2e",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Pays de la Loire (52) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/bcc09535-1039-4974-acae-e1551555c2ed",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Pays de la Loire (52) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/7b619d31-01ff-464b-9582-ab784427397a",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Pays de la Loire (52) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/e2b0b654-e14a-4f7b-be2a-5616352eb9ca",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Pays de la Loire (52) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/3eeb5e38-a057-4670-b819-1759035e1ef7",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Provence-Alpes-Côte d'Azur (93) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/0edfd104-608f-4a9d-815d-731996bba5ac",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Provence-Alpes-Côte d'Azur (93) - année 2020",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/f60edb4f-f0fe-43e3-b679-3892e920dd0a",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Provence-Alpes-Côte d'Azur (93) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/5291cee9-89d3-44e6-84fd-4384d34776dd",
+      "format": "shapefile",
+      "mediatype": "application/octet-stream",
+      "schema": "./table.schema.json"
+    },
+    {
+      "name": "Région Provence-Alpes-Côte d'Azur (93) - année 2019",
+      "path": "https://www.data.gouv.fr/fr/datasets/r/8e202da4-82d6-43dd-8b1a-6e54d82290c6",
+      "format": "geojson",
+      "mediatype": "application/json",
+      "schema": "./table.schema.json"
+    }
+  ],
+  "author": "Agence Bio",
+  "contact":"cartobio@beta.gouv.fr",
+  "contributors": [
+    {
+      "name": "Thomas Parisot",
+      "role": "developer"
+    }
+  ],
+  "version": "1.0.0",
+  "created": "2021-11-03",
+  "updated": "2021-11-03",
+  "homepage": "https://github.com/AgenceBio/schemas",
+  "uri": "https://github.com/AgenceBio/schemas/raw/main/packages/rpg-bio/datapackage.json"
+}

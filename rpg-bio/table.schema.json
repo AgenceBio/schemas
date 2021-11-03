@@ -1,0 +1,54 @@
+{
+  "fields": [
+    {
+      "name": "MILLESIME",
+      "type": "integer",
+      "description": "Année de déclaration PAC."
+    },
+    {
+      "name": "BIO",
+      "type": "integer",
+      "description": "Vaut “1” si la parcelle est conduite en agriculture biologique, ou est en conversion."
+    },
+    {
+      "name": "MARAICHAGE",
+      "type": "integer",
+      "description": "Vaut “1” si la parcelle est conduite en maraîchage."
+    },
+    {
+      "name": "AGROFOREST",
+      "type": "integer",
+      "description": "Vaut “1” si la parcelle est conduite en agroforesterie."
+    },
+    {
+      "name": "CODE_CULTU",
+      "type": "string",
+      "description": "Code culture de la parcelle (cf. [Liste des cultures et précisions (Métropole et DOM)](https://www.telepac.agriculture.gouv.fr/telepac/pdf/tas/2021/Dossier-PAC-2021_notice-cultures-precisions.pdf), PDF, 372Ko)."
+    },
+    {
+      "name": "LBL_CULTU",
+      "type": "string",
+      "description": "Libellé associé au code culture."
+    },
+    {
+      "name": "GRP_CULTU",
+      "type": "string",
+      "description": "Groupe de culture."
+    },
+    {
+      "name": "SURFACE_HA",
+      "type": "float",
+      "description": "Surface graphique de la parcelle (en hectares)."
+    },
+    {
+      "name": "SURF_ADM",
+      "type": "float",
+      "description": "Surface comptabilisée par le service d’instruction des aides PAC (en hectares)."
+    },
+    {
+      "name": "ANON_ID",
+      "type": "string",
+      "description": "Identifiant anonymisé de la structure agricole qui demande des aides pour cette parcelle."
+    }
+  ]
+}
